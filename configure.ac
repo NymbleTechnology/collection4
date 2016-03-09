@@ -1,4 +1,4 @@
-AC_INIT(collection, 4.0.0)
+AC_INIT([collection],[4.0.0])
 AC_CONFIG_SRCDIR(src/main.c)
 AC_CONFIG_HEADERS(src/config.h)
 AM_INIT_AUTOMAKE(dist-bzip2)
@@ -37,4 +37,5 @@ PKG_CHECK_MODULES([libcollectdclient], [libcollectdclient],
 		  [with_libcollectdclient="yes"],
 		  [with_libcollectdclient="no"])
 
-AC_OUTPUT(Makefile share/Makefile src/Makefile)
+AC_CONFIG_FILES([Makefile share/Makefile src/Makefile])
+AC_OUTPUT
